@@ -1,5 +1,5 @@
 
-# JavaScript编码规范
+# 乐米科技 技术部 JavaScript 编码规范
 
 
 ## 1 前言

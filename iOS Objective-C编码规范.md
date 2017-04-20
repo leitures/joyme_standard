@@ -1,5 +1,5 @@
 
-# 乐米科技 iOS团队 Objective-C 编码规范
+# 乐米科技 技术部 Objective-C 编码规范
 
 
 ## 命名
