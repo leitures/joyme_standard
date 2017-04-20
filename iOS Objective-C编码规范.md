@@ -1,52 +1,6 @@
 
 # 乐米科技 iOS团队 Objective-C 编码规范
 
-## 目录
-* [命名](#命名)
-  * [基本原则](#基本原则)
-  * [命名类和协议](#命名类和协议)
-  * [命名头文件](#命名头文件)
-  * [命名方法](#命名方法)
-  * [命名存取方法](#命名存取方法)
-  * [命名委法](#命名委托)
-  * [集合操作类方法](#集合操作类方法)
-  * [命名属性和实例变量数](#命名属性和实例变量)
-  * [命名常量](#命名常量)
-  * [命名通知](#命名通知)
-  * [图片命名](#图片命名)
-* [注释](#注释)
-  * [文件注释](#文件注释)
-  * [代码注释](#代码注释)
-* [代码格式](#代码格式)
-  * [每一行的最大长度](#每一行的最大长度)
-  * [空格](#空格)
-  * [函数的书写](#函数的书写)
-  * [函数调用](#函数调用)
-  * [@public和@private标记符](#@public和@private标记符)
-  * [协议（Protocols）](#协议（Protocols）)
-  * [闭包（Blocks）](#闭包（Blocks）)
-  * [字面量语法糖](#字面量语法糖)
-  * [代码组织](#代码组织)
-* [编码风格](#代码格式)
-  * [不要使用new方法](#不要使用new方法)
-  * [Public API要尽量简洁](#Public_API要尽量简洁)
-  * [#import和#include](##import和#include)
-  * [引用框架的根头文件](#引用框架的根头文件)
-  * [BOOL的使用](#BOOL的使用)
-  * [init和dealloc](init和dealloc)
-  * [Designated和Secondary初始化方法](#Designated和Secondary初始化方法)
-  * [按照顺序释放资源](#按照顺序释放资源)
-  * [nil检查](#nil检查)
-  * [点语法的使用](#点语法的使用)
-  * [Delegate要使用弱引用](#Delegate要使用弱引用)
-  * [单例](#单例)
-  * [KVO](#KVO)
-  * [断言](#断言)
-  * [Categories](#Categories)
-  * [Pragma Mark](#pragma-mark)
-* [设计模式](#设计模式)
-  * [ReactiveCocoa+MVVM](#reactivecocoamvvm)
- 
 
 ## 命名
 
@@ -422,7 +376,7 @@ const float NSLightGray;
 ## 命名通知
 
 通知常用于在模块间传递消息，所以通知要尽可能地表示出发生的事件，通知的命名范式是：
-	
+
 	[触发通知的类名] + [Did | Will] + [动作] + Notification
 
 例子：
@@ -471,14 +425,14 @@ Download-Progressbar-Normal@2x.png
 	Copyright (C), 2011-2013, Andrew Min Chang
 
 	File name: 	AMCCommonLib.h
-	Author:		Andrew Chang (Zhang Min) 
+	Author:		Andrew Chang (Zhang Min)
 	E-mail:		LaplaceZhang@126.com
-	
+
 	Description: 	
-			This file provide some covenient tool in calling library tools. One can easily include 
-		library headers he wants by declaring the corresponding macros. 
+			This file provide some covenient tool in calling library tools. One can easily include
+		library headers he wants by declaring the corresponding macros.
 			I hope this file is not only a header, but also a useful Linux library note.
-			
+
 	History:
 		2012-??-??: On about come date around middle of Year 2012, file created as "commonLib.h"
 		2012-08-20: Add shared memory library; add message queue.
@@ -493,11 +447,11 @@ Download-Progressbar-Normal@2x.png
 		2013-01-22: Add CFG_LIB_TIMER.
 		2013-01-22: Remove CFG_LIB_DATA_TYPE because there is already AMCDataTypes.h
 
-	Copyright information: 
+	Copyright information:
 			This file was intended to be under GPL protocol. However, I may use this library
-		in my work as I am an employee. And my company may require me to keep it secret. 
-		Therefore, this file is neither open source nor under GPL control. 
-		
+		in my work as I am an employee. And my company may require me to keep it secret.
+		Therefore, this file is neither open source nor under GPL control.
+
 ********************************************************************************/
 ```
 
@@ -1104,7 +1058,7 @@ initWithTitle: date: location: 就是 designated 初始化方法，另外的两�
 ```objective-c
 //直接判断
 if (!objc) {
-	...	
+	...
 }
 ```
 
@@ -1112,7 +1066,7 @@ if (!objc) {
 ```objc
 //不要使用nil == Object的形式
 if (nil == objc) {
-	...	
+	...
 }
 ```
 
@@ -1262,7 +1216,7 @@ protocols 的实现
 
 
 
-关于这个编程语言的所有规范，如果这里没有写到，那就在苹果的文档里： 
+关于这个编程语言的所有规范，如果这里没有写到，那就在苹果的文档里：
 
 * [Cocoa 编码指南][Introduction_3]
 * [iOS 应用编程指南][Introduction_4]
